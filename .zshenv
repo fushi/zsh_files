@@ -5,8 +5,8 @@
 ZSH_FILES_DIR=`dirname $(readlink ~/.zshenv)`
 
 SOURCE_DIR=~/source
-PERSONAL_SOURCE=$SOURCE_FOLDER/personal
-THIRDPARTY_SOURCE=$SOURCE_FOLDER/thirdparty
+PERSONAL_SOURCE=$SOURCE_DIR/personal
+THIRDPARTY_SOURCE=$SOURCE_DIR/thirdparty
 
 # Source local environment variables
 [[ -s ~/.local_envvars ]] && source ~/.local_envvars
