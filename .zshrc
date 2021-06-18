@@ -5,7 +5,8 @@
 autoload -Uz vcs_info
 
 # jenv
-if [[ $(which jenv 1> /dev/null) ]]; then
+if command -v jenv 1> /dev/null
+then
     eval "$(jenv init -)"
 fi
 
