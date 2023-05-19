@@ -23,7 +23,7 @@ A replacement .zshenv
 ### .zshrc
 A replacement .zshrc
 
-`ln -s absolute_path_to_/.zshenv ~/.zshenv`
+`ln -s absolute_path_to_/.zshrc ~/.zshrc`
 
 * Autoloads vcs_info
 * `eval "$(jenv init -)"` if jenv installed
