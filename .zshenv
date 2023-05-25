@@ -17,6 +17,9 @@ PATH=$PERSONAL_SOURCE/scripts:$PATH
 # Put the cwd in the path
 PATH=.:$PATH
 
+# `brew` for Apple Silicon Macs
+PATH=/opt/homebrew/bin:$PATH
+
 # MySQL 5.7 via `brew`
 [[ -s /usr/local/opt/mysql@5.7/bin ]] && PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 
