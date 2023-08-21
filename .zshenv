@@ -11,6 +11,9 @@ THIRDPARTY_SOURCE=$SOURCE_DIR/thirdparty
 # Source local environment variables
 [[ -s ~/.local_envvars ]] && source ~/.local_envvars
 
+# Put local scripts in the path
+PATH=~/local_scripts:$PATH
+
 # Put personal scripts in the path
 PATH=$PERSONAL_SOURCE/scripts:$PATH
 
