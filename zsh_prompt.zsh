@@ -71,9 +71,19 @@ function set_git_branch {
   fi
 }
 
+function set_aws_vault_env {
+  if [[ -z "${AWS_VAULT}" ]]
+  then
+    AWSVENV=''
+  else
+    AWSVENV="${FGCYBD}<${AWS_VAULT}>${RESET}"
+  fi
+}
+
 precmd() {
   set_git_branch
-  RPROMPT="$BRANCH"
+  set_aws_vault_env
+  RPROMPT="${BRANCH}${AWSVENV}"
 }
 
 preexec() {
