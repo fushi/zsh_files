@@ -12,3 +12,10 @@ fi
 
 # Load custom zsh prompt
 source $ZSH_FILES_DIR/zsh_prompt.zsh
+
+# Load script aliases
+for f in ${PERSONAL_SOURCE}/scripts/*.sh ~/local_scripts/*.sh
+do
+    f=`basename $f`
+    alias "${f%.*}"="${f}"
+done
