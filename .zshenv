@@ -23,6 +23,9 @@ PATH=.:$PATH
 # `brew` for Apple Silicon Macs
 PATH=/opt/homebrew/bin:$PATH
 
+# `nvm` via `brew`
+NVM_DIR="$HOME/.nvm"
+
 # MySQL 5.7 via `brew`
 [[ -s /usr/local/opt/mysql@5.7/bin ]] && PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 
